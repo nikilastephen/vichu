@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg,#3e2723,#6f4e37,#f5f0e6);
+  color: white;
+  overflow-x: hidden;
+  transition: 0.6s;
+}
+
+/* Center */
+.center {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass */
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(25px);
+  border-radius: 25px;
+  padding: 30px;
+  margin: 30px auto;
+  width: 80%;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {opacity:0; transform:translateY(40px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+/* Glow Text */
+.glow-text {
+  text-shadow: 0 0 10px #fff, 0 0 20px #d2b48c;
+}
+
+/* Buttons */
+button {
+  padding: 12px 28px;
+  margin: 10px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(145deg,#8b5e3c,#6f4e37);
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+button:hover {
+  transform: translateY(-6px) scale(1.1);
+  background: white;
+  color: #6f4e37;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Message Box */
+.message-box {
+  font-size: 18px;
+  font-weight: bold;
+  min-height: 50px;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  color: #6f4e37;
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.hidden { display: none; }
+
+/* Dark Mode */
+.dark-mode {
+  background: linear-gradient(135deg,#1a1a1a,#3e2723);
+}
+
+/* Floating Hearts */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  animation: floatUp 8s linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}

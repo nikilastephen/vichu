@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Chinna 🤎 | From Chinnu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="sparkCanvas"></canvas>
+
+<!-- Floating Hearts Container -->
+<div id="heartsContainer"></div>
+
+<!-- Love Popup -->
+<div id="lovePopup" class="popup hidden">
+  <div class="popup-content">
+    <h2>Chinna 🤎</h2>
+    <p>
+      This world is created by your Chinnu.  
+      You are my strength, my peace, my forever happiness.  
+      The most beautiful and pure soul in this universe.
+    </p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<!-- Welcome Section -->
+<section id="welcomeSection" class="center">
+  <h1 class="typing"></h1>
+  <button onclick="enterSite()">Enter Chinna 🤎</button>
+</section>
+
+<!-- Main Content -->
+<div id="mainContent" class="hidden">
+
+<header class="glass">
+  <h1 class="glow-text">Chinna ✨ The Beautiful Soul</h1>
+  <button onclick="toggleMode()">🌙 Toggle Mode</button>
+</header>
+
+<section class="glass">
+  <h2>Tap & Feel 🤎</h2>
+  <button onclick="showMessage(1)">Why You Are Special</button>
+  <button onclick="showMessage(2)">What You Mean To Me</button>
+  <button onclick="showMessage(3)">Our Bond</button>
+</section>
+
+<div id="messageBox" class="glass message-box"></div>
+
+<section class="glass">
+  <h2>Secret Love 🔐</h2>
+  <input type="password" id="password" placeholder="Enter password">
+  <button onclick="unlockLove()">Unlock</button>
+  <p id="secretMessage"></p>
+</section>
+
+<footer class="glass">
+  <h2>From Chinnu 🤎</h2>
+  <p>Miss You Chinna… Always & Forever 💫</p>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
